@@ -1,49 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-</head>
-    <buttton onclick="myfun()">click here</buttton>
-    <hr />
-    
-    <buttton onclick="myfun()">click me here</buttton>
-    <a href="https://pitpinchez.infinityfreeapp.com/myhome.php">login</a>
-   
-    <script>
-    function myfun(){
-        alert("goood morning");
-        console.log("HEY THERE")
-    }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
     <style>
-        body{
-            background-color:green;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        h{
-            background-color: white;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
             text-align: center;
-
         }
-        button{
-            background-color: blue;     
-            outline: none;
-            border-radius: 56px;
+        .header-links {
+            position: absolute;
+            top: 15px;
+            right: 15px;
         }
-        img{
-           
+        .header-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
         }
-        .image{
-            
-            height: 130px;
+        .header-links a:hover {
+            text-decoration: underline;
+        }
+        .container {
             text-align: center;
-            justify-content: center;
-            box-shadow:4px 20px 39px black;
-            transition:2s;
-            
+            padding: 50px;
         }
-        .image:hover{
-            width:100%;
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
+</head>
+<body>
+    <header>
+        <div class="header-links">
+            <a href="https://pitpinchez.infinityfreeapp.com/login.php">Login</a>
+            <a href="https://pitpinchez.infinityfreeapp.com/signup.php">Sign Up</a>
+        </div>
+        <h1>Welcome to Buy & Sell Central</h1>
+    </header>
+    <div class="container">
+        <h1>Find Jobs, Buy & Sell Second-Hand Goods, and Advertise Your Skills!</h1>
+        <p>Your one-stop platform for a seamless experience in job hunting, buying and selling items, and showcasing your skills.</p>
+        <a href="#explore" class="button">Explore Now</a>
+    </div>
 </body>
 </html>
