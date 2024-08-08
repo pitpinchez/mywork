@@ -3,80 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>SellerConnect Landing Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background-color:green;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            width:100%;
+            z-index: 1;
+            background-color: #ff5e00;
+            color: white;
+            position: fixed;
         }
-        .header-links {
-            position: absolute;
-            top: 15px;
-            right: 15px;
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
         }
-        .header-links a {
-            color: #fff;
+        .header-buttons a {
+            color: white;
             text-decoration: none;
-            margin: 0 10px;
-            font-size: 16px;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 4px;
+            margin: 0 5px;
         }
-        .header-links a:hover {
-            text-decoration: underline;
+        .header-buttons a:hover {
+            background-color: white;
+            color: #007bff;
+        }
+        .hero {
+           
+            color:black;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .hero img {
+          width:100%;
+          height:500px;
+          position: relative;
+          top:0;
+        }
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 4px;
+            font-size: 18px;
+            margin: 10px;
+        }
+        .cta-button:hover {
+            background-color: #218838;
         }
         .container {
-            text-align: center;
-            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        h1 {
-            font-size: 2.5em;
+        .features, .testimonials, .pricing {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .features h2, .testimonials h2, .pricing h2 {
+            font-size: 36px;
             margin-bottom: 20px;
         }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
+        .feature, .testimonial, .pricing-plan {
+            margin-bottom: 20px;
         }
-        .button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 15px 25px;
-            font-size: 16px;
-            cursor: pointer;
-            text-decoration: none;
-            border-radius: 5px;
+        .feature img, .testimonial img {
+            width:100%;
+            height:auto;
+        }
+        .pricing-plan {
             display: inline-block;
+            width: 30%;
+            margin: 0 1%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
-        .button:hover {
+        .pricing-plan h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .newsletter {
+            margin-top: 20px;
+        }
+        .newsletter input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .mybutton{
+            width:70%;
+            padding:10px 10px;
+            background: orangered;   
+            color:white;
+            font-size:20px;
+            border-radius: 10px;
+            border:1px solid white;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
             background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .pricing-plan {
+                width: 90%;
+                margin: 10px auto;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-links">
-        <a href="https://pitpinchez.infinityfreeapp.com/login.php">login now</a>
-            <a href="https://pitpinchez.infinityfreeapp.com/signup.php">Sign Up</a>
+        <div class="logo">Dukakubwa</div>
+        <div class="header-buttons">
+            <a href="#login">Login</a>
+            <a href="#signup">Sign Up</a>
         </div>
-        <h1>Welcome to Buy & Sell Central</h1>
     </header>
-    <div class="container">
-        <h1>Find Jobs, Buy & Sell Second-Hand Goods, and Advertise Your Skills!</h1>
-        <p>Your one-stop platform for a seamless experience in job hunting, buying and selling items, and showcasing your skills.</p>
-      <button type="button"onclick="openwindow()"class="button">start now</button>
+
+    <div class="hero">
+        <img src="eco.png">
+        <h1>Find the Perfect Buyer for Your Products!</h1>
+        <p>Connect with interested buyers effortlessly and boost your sales with our easy-to-use platform.</p>
+        <a href="#get-started" class="cta-button">Start Connecting Now</a>
+        <a href="#learn-more" class="cta-button">Learn More</a>
     </div>
-    <script>
-        function openwindow(){
-               window.open("https://pitpinchez.infinityfreeapp.com/myhome.php");
-        }
-    </script>
+
+    <div class="container">
+        <div id="how-it-works" class="features">
+            <h2>How It Works</h2>
+            <div class="feature">
+                <img src="sign.jpg" alt="Step 1">
+                <h3>Sign Up</h3>
+                <p>Create your seller profile.</p>
+            </div>
+            <div class="feature">
+                <img src="sell online.jpg" alt="Step 2">
+                <h3>List Your Products</h3>
+                <p>Showcase what you have to offer.</p>
+            </div>
+            <div class="feature">
+                <img src="connect.png" alt="Step 3">
+                <h3>Connect with Buyers</h3>
+                <p>Get matched with interested buyers.</p>
+            </div>
+            <div class="feature">
+                <img src="close deal.jpg" alt="Step 4">
+                <h3>Close the Deal</h3>
+                <p>Finalize the sale and grow your business.</p>
+            </div>
+        </div>
+
+       <center>
+         <button type="button"class="mybutton">connect now</button>
+         </center>
+
+    <footer>
+        <div>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="newsletter">
+            <input type="email" placeholder="Sign up for our newsletter">
+            <button>Subscribe</button>
+        </div>
+        <p>&copy; 2024 Dukakubwa. All rights reserved.</p>
+    </footer>
 </body>
 </html>
